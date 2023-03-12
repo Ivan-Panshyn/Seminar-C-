@@ -6,6 +6,7 @@
 // 12-> 2
 // 85 -> 8
 
+// Первый метод
 int number = new Random().Next(10, 100);
 Console.WriteLine($"Случайное число из отрезка 10 - 99 -> {number}");
 int firstDigit = number / 10;
@@ -19,9 +20,12 @@ else
   Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
 }
 
+// Второй метод
+
 int result = firstDigit > secondDigit ? firstDigit : secondDigit;
 Console.WriteLine($"Наибольшая цифра числа -> {result}");
 
+// третий варинт
 int maxDigit = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
 
