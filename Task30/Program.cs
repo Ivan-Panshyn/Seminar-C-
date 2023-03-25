@@ -11,14 +11,14 @@ WriteArray(array);
 
 void FillArray(int[] arr)
 {
-  Random rand = new Random();
+  Random rand = new Random(); // переменное значение
   for (int i = 0; i < arr.Length; i++)
   {
     arr[i] = rand.Next(0, 2);
   }
 }
 
-void WriteArray(int[] arr)
+void WriteArray(int[] arr) // отображает массив в консоле
 {
   for (int i = 0; i < arr.Length; i++)
   {
